@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc7d31b33fb82784b879ce6554bb7342, type: 3}
-  m_Name: PlayerStats_Warrior
+  m_Name: PlayerStats_Cleric
   m_EditorClassIdentifier: 
-  _name: Wart
-  _characterClass: 1
+  _name: Clarence
+  _characterClass: 4
   _characterLevel: 1
-  _characterExp: 50
-  _maxHealth: 30
-  _maxMana: 6
-  _attackPower: 18
-  _toughness: 20
-  _magicPower: 0
+  _characterExp: 0
+  _maxHealth: 20
+  _maxMana: 20
+  _attackPower: 9
+  _toughness: 12
+  _magicPower: 18
   _resilience: 14
-  _speed: 3
+  _speed: 8

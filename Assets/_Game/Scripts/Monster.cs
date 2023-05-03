@@ -19,4 +19,9 @@ public class Monster : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, _data.RangeOfAwareness);
     }
+
+    public void addExp()
+    {
+
+    }
 }

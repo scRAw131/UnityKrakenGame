@@ -23,4 +23,10 @@ public class PlayerCharacter : MonoBehaviour
         Debug.Log("Speed: " + _stats.Speed);
 
     }
+
+    private void Update()
+    {
+        _stats.levelUP();
+       
+    }
 }
