@@ -13,8 +13,9 @@ public class MonsterData : ScriptableObject
     [Tooltip("Radius size where monster will see the player")]
     [Range(0, 100)]
     private float _rangeOfAwareness = 10;
+    [SerializeField] private int _expToGive;
 
-    [Header("Combat Steps")]
+    [Header("Combat Stats")]
     [SerializeField] private int _damage = 1;
     [SerializeField] private int _health = 1;
     [SerializeField] private int _speed = 1;
@@ -32,4 +33,5 @@ public class MonsterData : ScriptableObject
     public int Damage => _damage;
     public int Health => _health;
     public string BattleCry => _battleCry;
+    public int EXPValue => _expToGive;
 }

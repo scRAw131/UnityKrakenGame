@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7e17736c6a4a44ba8f47d6cdcac0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Skeleton
+  _data: {fileID: 11400000, guid: 9124891be4aedd24b93584f1a84e9224, type: 2}
 --- !u!1 &1857290334
 GameObject:
   m_ObjectHideFlags: 0

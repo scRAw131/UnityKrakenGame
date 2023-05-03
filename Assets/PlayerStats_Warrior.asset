@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7d31b33fb82784b879ce6554bb7342, type: 3}
+  m_Name: PlayerStats_Warrior
+  m_EditorClassIdentifier: 
+  _name: Jimmer
+  _characterClass: 1
+  _characterLevel: 1
+  _maxHealth: 30
+  _maxMana: 6
+  _attackPower: 18
+  _toughness: 20
+  _magicPower: 0
+  _resilience: 16
+  _speed: 3
