@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc7d31b33fb82784b879ce6554bb7342, type: 3}
-  m_Name: PlayerStats_Mage
+  m_Name: PlayerStats_Warrior
   m_EditorClassIdentifier: 
-  _name: Magimous
-  _characterClass: 0
-  _characterLevel: 1
-  _characterExp: 0
-  _maxHealth: 12
-  _maxMana: 24
-  _attackPower: 4
-  _toughness: 7
-  _magicPower: 30
-  _resilience: 8
-  _speed: 12
+  _name: Wart
+  _characterClass: 1
+  _characterLevel: 3
+  _characterExp: 100
+  _maxHealth: 54
+  _maxMana: 10
+  _attackPower: 34
+  _toughness: 36
+  _magicPower: 0
+  _resilience: 26
+  _speed: 7

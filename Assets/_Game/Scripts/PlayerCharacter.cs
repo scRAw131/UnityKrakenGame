@@ -21,12 +21,16 @@ public class PlayerCharacter : MonoBehaviour
         Debug.Log("Magic Power: " + _stats.Magic);
         Debug.Log("Resilience: " + _stats.Resilience);
         Debug.Log("Speed: " + _stats.Speed);
+        Debug.Log("-----------------------");
 
     }
 
     private void Update()
     {
         _stats.levelUP();
-       
+        if (Input.GetKeyDown("escape"))
+        {
+            _stats.resetLevels();
+        }
     }
 }

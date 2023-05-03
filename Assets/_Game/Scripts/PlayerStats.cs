@@ -58,31 +58,39 @@ public class PlayerStats : ScriptableObject
         }
         if (_characterClass == CharacterClass.Thief)
         {
-            _characterLevel += 1;
-            _maxHealth += 9;
-            _maxMana += 6;
-            _attackPower += 9;
-            _toughness += 4;
-            _resilience += 4;
-            _speed += 9;
-            levelUpMsg();
+            if (_characterExp >= 50 * _characterLevel)
+            {
+                _characterLevel += 1;
+                _maxHealth += 9;
+                _maxMana += 6;
+                _attackPower += 9;
+                _toughness += 4;
+                _magicPower += 4;
+                _resilience += 4;
+                _speed += 9;
+                levelUpMsg();
+            }
         }
         if (_characterClass == CharacterClass.Cleric)
         {
-            _characterLevel += 1;
-            _maxHealth += 10;
-            _maxMana += 10;
-            _attackPower += 8;
-            _toughness += 8;
-            _resilience += 6;
-            _speed += 2;
-            levelUpMsg();
+            if (_characterExp >= 50 * _characterLevel)
+            {
+                _characterLevel += 1;
+                _maxHealth += 10;
+                _maxMana += 10;
+                _attackPower += 8;
+                _toughness += 8;
+                _magicPower += 8;
+                _resilience += 6;
+                _speed += 2;
+                levelUpMsg();
+            }
         }
     }
 
     private void levelUpMsg()
     {
-        Debug.Log("Level UP!");
+        Debug.Log(Name + " Leveled UP!");
         Debug.Log("EXP: " + EXP);
         Debug.Log("HP: " + HP);
         Debug.Log("MP: " + MP);
@@ -91,7 +99,60 @@ public class PlayerStats : ScriptableObject
         Debug.Log("Magic Power: " + Magic);
         Debug.Log("Resilience: " + Resilience);
         Debug.Log("Speed: " + Speed);
+        Debug.Log("-----------------------");
     }
+
+    public void resetLevels()
+    {
+        if (_characterClass == CharacterClass.Warrior)
+        {
+            _characterExp = 0;
+            _characterLevel = 1;
+            _maxHealth = 30;
+            _maxMana = 6;
+            _attackPower = 18;
+            _toughness = 20;
+            _magicPower = 0;
+            _resilience = 14;
+            _speed = 3;
+        }
+        if (_characterClass == CharacterClass.Thief)
+        {
+            _characterExp = 0;
+            _characterLevel = 1;
+            _maxHealth = 18;
+            _maxMana = 12;
+            _attackPower = 22;
+            _toughness = 12;
+            _magicPower = 4;
+            _resilience = 12;
+            _speed = 18;
+        }
+        if (_characterClass == CharacterClass.Cleric)
+        {
+            _characterExp = 0;
+            _characterLevel = 1;
+            _maxHealth = 20;
+            _maxMana = 20;
+            _attackPower = 9;
+            _toughness = 12;
+            _magicPower = 18;
+            _resilience = 12;
+            _speed = 8;
+        }
+        if (_characterClass == CharacterClass.Mage)
+        {
+            _characterExp = 0;
+            _characterLevel = 1;
+            _maxHealth = 12;
+            _maxMana = 24;
+            _attackPower = 4;
+            _toughness = 7;
+            _magicPower = 30;
+            _resilience = 8;
+            _speed = 12;
+        }
+     }
 
     //Public Exposing
     public string Name => _name;
